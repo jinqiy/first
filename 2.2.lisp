@@ -1,0 +1,6 @@
+[26]> '(a b c)
+(A B C)
+[27]> (list 'a 'b 'c)
+(A B C)
+[28]> (cons 'a (cons 'b (cons 'c nil)))
+(A B C)
