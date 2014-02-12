@@ -1,5 +1,5 @@
 a) 
-iterative
+iterative version
 [1]> (defun show-dots(x)
 (do ((i 1 (+ i 1)))
   ((> i x) 'done)
@@ -18,7 +18,7 @@ DONE
 ..........
 DONE
 
-recursive
+recursive version
 [15]> (defun show-dots-r(x)
 (if (= x 0) 'done (progn (format t ".") (show-dots-r(- x 1)))))
 SHOW-DOTS-R
@@ -33,7 +33,7 @@ DONE
 DONE
 
 b)
-iterative
+iterative version
 [61]> (defun show-a(lst)
 (let ((x 0))
   (do ((i 0 (+ i 1)))
@@ -54,7 +54,7 @@ SHOW-A
 [65]> (show-a '(a b c a b a x a))
 4
 
-recursive
+recursive version
 [83]> 
 (defun show-a-r(lst)                                                                                              
 (if (null lst) 0
