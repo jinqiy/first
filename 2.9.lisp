@@ -1,5 +1,5 @@
 (a)
-should assign lst without nil to a new variable before add up
+should assign lst removed nil elements to a new variable before add up
 [26]> 
 (defun summit (lst)
   (setf lstx (remove nil lst))
