@@ -1,11 +1,20 @@
-(a) cons
+(a) cons  but cons is a primitive function, nothing changed here.
 [12]>
-(defun govcons (a b)
-   (if (and (not (listp a)) (not (listp b))) 
-      (cons a b)
-   )
+(defun mcons (a b)
+(cons a b)
 )
-GOVCONS
-[13]> (govcons 'a 'b)
-(A . B)
+MCONS
+[13]> (mcons 'a '(b c))                                                                                            
+(A B C)
+[14]> (mcons '(a a) '(b c))                                                                                        
+((A A) B C)
+
+(b) list   also, list is a primitive function, nothing changed here.
+!!not work yet
+(defun mlist (para)
+(if (null para) nil (progn (format t "~A" para) (cons (car para) (mlist (cdr para))))
+)
+)
+
+
 
