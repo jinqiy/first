@@ -10,11 +10,7 @@ MCONS
 ((A A) B C)
 
 (b) list   also, list is a primitive function, nothing changed here.
-!!not work yet
-(defun mlist (para)
-(if (null para) nil (progn (format t "~A" para) (cons (car para) (mlist (cdr para))))
-)
-)
 
+(c) length(for lists)
 
 
