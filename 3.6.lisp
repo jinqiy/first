@@ -46,4 +46,4 @@ MLENGTH
 [5]> (mlength '())
 0
 
-
+(d) member
