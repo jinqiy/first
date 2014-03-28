@@ -47,3 +47,17 @@ MLENGTH
 0
 
 (d) member
+[7]> 
+(defun mmember(ele lst)
+  (if (equal ele (cdr lst))
+      lst 
+      (mmember ele (car lst))
+  )
+)
+MMEMBER
+[8]> (mmember 'a '(a b c))
+(A B C)
+[9]> (mmember 'b '(a b c))
+(B C)
+[10]> (mmember 'c '(a b c))
+(C)
