@@ -42,3 +42,5 @@ MYAPPEND
 >(defun myreverse (lst)                                                                                            
  (reduce #'myappend  lst :key #'list))
 MYREVERSE
+> (myreverse '(a b c))
+(C B A)
